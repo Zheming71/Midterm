@@ -1,0 +1,60 @@
+<% include ../partials/header.ejs %>
+
+<main class="container">
+  <!-- Message Area see passport-project  -->
+  
+
+  <div class="row">
+    <div class="offset-md-4 col-md-4">
+      <h1>Enter Faculty information</h1>
+
+      <form method="POST" autocomplete="off" >
+        <fieldset class="form-group">
+          <label for="Facultyid">Facultyid: </label>
+          <input
+            type="text"
+            class="form-control"
+            name="Facultyid"
+            placeholder="Enter Facultyid"
+            id="Facultyid"
+            required
+            autofocus
+          />
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label for="Facultyname">Facultyname: </label>
+          <input
+            type="text"
+            class="form-control"
+            name="Facultyname"
+            placeholder="Enter Facultyname"
+            id="Facultyname"
+            required
+          />
+          <fieldset class="form-group">
+            <label for="Department">Department: </label>
+            <input type="text" class="form-control"
+            name="Department" placeholder="Enter Department"
+            id="Department" required>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="Subject">Subject: </label>
+            <input type="text" class="form-control"
+            name="Subject" placeholder="Enter Subject"
+            id="Subject" required>
+        </fieldset>
+
+        <fieldset class="form-group text-right">
+          <input type="submit" class="btn btn-success" value="Submit" />
+          <a href="/faculties">
+            <input type="button" class="btn btn-warning" value="Cancel" />
+          </a>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</main>
+
+<% include ../partials/footer.ejs %>
